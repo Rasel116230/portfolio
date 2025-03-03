@@ -250,7 +250,6 @@
 
             </div>
 
-
             <!-- item 3 -->
             <div class="service_item">
               <div class="flex items-center gap-3 text-xl font-bold md:w-[40%] md:text-2xl">
@@ -298,7 +297,56 @@
       </section>
 
       <!--~~~~~~~~~~~~~~~ My Recent Works ~~~~~~~~~~~~~~~-->
-      <section>
+      <section id="recent_works">
+        <div class="container">
+          <!-- title section -->
+          <div class="flex flex-col items-center gap-5 text-center">
+            <h2 class="subtitle">My Recent Works</h2>
+            <p class="max-w-2xl">We transform your ideas and desires into a distinctive web project that inspires both you and your customers.</p>
+          </div>
+
+
+          <div class="relative w-max mx-auto my-10 h-10 text-xs grid grid-cols-4
+          items-center px-[3px] bg-sectionColor rounded-full dark:bg-darkSectionColor border border-primaryColor 
+          transition  overflow-hidden md:text-base md:h-12">
+
+            <!-- indicator -->
+             <div class="indicator absolute h-9 my-auto left-0 top-0 bottom-0 bg-primaryColorLight rounded-full md:h-11"></div>
+
+             <button class="tab relative block rounded-full h-8 px-3 text-whiteColor
+              md:h-10 md:px-6" data-tabs="all">All</button>
+             <button class="tab relative block rounded-full h-8 px-3 text-whiteColor
+             md:h-10 md:px-6" data-tabs="uiux">UX/UI</button>
+             <button class="tab relative block rounded-full h-8 px-3 text-whiteColor
+             md:h-10 md:px-6" data-tabs="branding">Branding</button>
+             <button class="tab relative block rounded-full h-8 px-3 text-whiteColor
+             md:h-10 md:px-6" data-tabs="apps">Apps</button>
+            
+          </div>
+
+          <div class="mt-6 relative rounded-3xl">
+
+            <!-- blob -->
+            <div class="absolute top-1/2 left-1/2 w-80 h-80 bg-primaryColorLight mix-blend-screen
+              transform -translate-x-1/2 -translate-y-1/2  rounded-full blur-[150px] opacity-50"></div>
+
+            <ul class="grid grid-cols-1 gap-5 lg:gap-8 md:grid-cols-2">
+
+              <li class="work_card uiux bg-sectionColor p-5 rounded-2xl border border-transparent hover:border-primaryColor
+              dark:bg-darkSectionColor overflow-hidden duration-300 lg:p-8"><a href=""><img src="images/project-1.jpg" class="w-full"  alt=""></a></li>
+              
+              <li class="work_card branding bg-sectionColor p-5 rounded-2xl border border-transparent hover:border-primaryColor
+              dark:bg-darkSectionColor overflow-hidden duration-300 lg:p-8"><a href=""><img src="images/project-2.jpg" class="w-full"  alt=""></a></li>
+
+              <li class="work_card apps bg-sectionColor p-5 rounded-2xl border border-transparent hover:border-primaryColor
+              dark:bg-darkSectionColor overflow-hidden duration-300 lg:p-8"><a href=""><img src="images/project-3.jpg" class="w-full"  alt=""></a></li>
+
+              <li class="work_card uiux bg-sectionColor p-5 rounded-2xl border border-transparent hover:border-primaryColor
+              dark:bg-darkSectionColor overflow-hidden duration-300 lg:p-8"><a href=""><img src="images/project-4.jpg" class="w-full"  alt=""></a></li>
+            </ul>
+          </div>
+
+          </div>
 
       </section>
 

@@ -813,6 +813,14 @@ section{
   top: 1.5rem;
 }
 
+.left-1\/2{
+  left: 50%;
+}
+
+.top-1\/2{
+  top: 50%;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -821,9 +829,19 @@ section{
   z-index: 50;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .my-10{
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+
+.my-auto{
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .ml-10{
@@ -832,6 +850,14 @@ section{
 
 .ml-auto{
   margin-left: auto;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
+}
+
+.block{
+  display: block;
 }
 
 .flex{
@@ -846,8 +872,20 @@ section{
   display: none;
 }
 
+.h-10{
+  height: 2.5rem;
+}
+
 .h-80{
   height: 20rem;
+}
+
+.h-9{
+  height: 2.25rem;
+}
+
+.h-8{
+  height: 2rem;
 }
 
 .w-10{
@@ -860,6 +898,11 @@ section{
 
 .w-full{
   width: 100%;
+}
+
+.w-max{
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .max-w-2xl{
@@ -876,6 +919,16 @@ section{
 
 .origin-center{
   transform-origin: center;
+}
+
+.-translate-x-1\/2{
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-1\/2{
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .rotate-45{
@@ -898,6 +951,10 @@ section{
 
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -942,12 +999,28 @@ section{
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
+.overflow-hidden{
+  overflow: hidden;
+}
+
 .rounded-\[38px\]{
   border-radius: 38px;
 }
 
 .rounded-full{
   border-radius: 9999px;
+}
+
+.rounded-3xl{
+  border-radius: 1.5rem;
+}
+
+.rounded-2xl{
+  border-radius: 1rem;
+}
+
+.border{
+  border-width: 1px;
 }
 
 .border-2{
@@ -957,6 +1030,10 @@ section{
 .border-primaryColor{
   --tw-border-opacity: 1;
   border-color: hsl(209 87% 21% / var(--tw-border-opacity, 1));
+}
+
+.border-transparent{
+  border-color: transparent;
 }
 
 .bg-primaryColor{
@@ -972,6 +1049,15 @@ section{
 .bg-sectionColor{
   --tw-bg-opacity: 1;
   background-color: hsl(209 100% 97% / var(--tw-bg-opacity, 1));
+}
+
+.p-5{
+  padding: 1.25rem;
+}
+
+.px-\[3px\]{
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .py-10{
@@ -992,6 +1078,11 @@ section{
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .pb-5{
@@ -1022,6 +1113,11 @@ section{
   line-height: 1.75rem;
 }
 
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1036,6 +1132,11 @@ section{
   color: hsl(209 74% 45% / var(--tw-text-opacity, 1));
 }
 
+.text-whiteColor{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
 .opacity-50{
   opacity: 0.5;
 }
@@ -1047,6 +1148,14 @@ section{
 .blur-\[150px\]{
   --tw-blur: blur(150px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .duration-300{
@@ -1131,6 +1240,10 @@ transition-transform ease-in-out  duration-300 hover:text-whiteColor;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.indicator{
+  transition: 0.4s left;
+}
+
 .hover\:rotate-0:hover{
   --tw-rotate: 0deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1139,6 +1252,11 @@ transition-transform ease-in-out  duration-300 hover:text-whiteColor;
 .hover\:border-primaryColorLight:hover{
   --tw-border-opacity: 1;
   border-color: hsl(209 74% 45% / var(--tw-border-opacity, 1));
+}
+
+.hover\:border-primaryColor:hover{
+  --tw-border-opacity: 1;
+  border-color: hsl(209 87% 21% / var(--tw-border-opacity, 1));
 }
 
 .hover\:text-whiteColor:hover{
@@ -1179,6 +1297,18 @@ transition-transform ease-in-out  duration-300 hover:text-whiteColor;
     display: none;
   }
 
+  .md\:h-12{
+    height: 3rem;
+  }
+
+  .md\:h-11{
+    height: 2.75rem;
+  }
+
+  .md\:h-10{
+    height: 2.5rem;
+  }
+
   .md\:w-1\/2{
     width: 50%;
   }
@@ -1187,16 +1317,30 @@ transition-transform ease-in-out  duration-300 hover:text-whiteColor;
     width: 3.5rem;
   }
 
-  .md\:w-full{
-    width: 100%;
-  }
-
   .md\:w-\[40\%\]{
     width: 40%;
   }
 
+  .md\:w-full{
+    width: 100%;
+  }
+
   .md\:max-w-\[330px\]{
     max-width: 330px;
+  }
+
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .md\:text-3xl{
@@ -1204,9 +1348,9 @@ transition-transform ease-in-out  duration-300 hover:text-whiteColor;
     line-height: 2.25rem;
   }
 
-  .md\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .md\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -1255,12 +1399,20 @@ transition-transform ease-in-out  duration-300 hover:text-whiteColor;
     gap: 1.25rem;
   }
 
+  .lg\:gap-8{
+    gap: 2rem;
+  }
+
   .lg\:border-none{
     border-style: none;
   }
 
   .lg\:bg-transparent{
     background-color: transparent;
+  }
+
+  .lg\:p-8{
+    padding: 2rem;
   }
 
   .lg\:py-0{

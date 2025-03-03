@@ -104,6 +104,11 @@ transition-transform ease-in-out  duration-300 hover:text-whiteColor;
 }
 
 
+.indicator{
+    transition: 0.4s left;
+}
+
+
 
 }
 
